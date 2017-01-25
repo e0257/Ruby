@@ -1,0 +1,277 @@
+body{
+background: linear-gradient(to top, #c1680d 20%, #d4b651, #d6d3bb 60%)no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+
+}
+
+.wrap {
+	max-width: 1000px;
+	padding: 1px;
+	margin: 0 auto;
+}
+
+header{
+	width: 100%;
+	height: 100px;
+/*	background: lightblue;
+*/	padding: 1px;
+}
+.content{
+	width: 100%;
+	min-height: 700px;
+/*	background: lightyellow;
+*/	padding: 1px;
+
+}
+.pre-footer{
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	padding: 1px;
+}
+footer{
+	width: 100%;
+	height: 100px;
+	padding: 10px;
+	text-align: center;
+}
+
+
+/* HEADER */
+header .user{
+	display: inline-block;
+	width: 300px;
+	height: 25px;
+	margin: 5px 5px;
+	position: absolute;
+	right: 10px;
+	text-align: right;
+}
+
+header .user span{
+	color: #f78d1d;
+	font-size:20px;
+}
+
+header .user span.glyphicon-user{
+	color: black;
+	font-size:26px;
+}
+
+header .user a{
+	text-decoration: none;
+	border: solid 1px #da7c0c;
+	background: #f78d1d;
+	background: -webkit-gradient(linear, left top, leftbottom, from(#faa51a), to(#f47a20));
+	background: -moz-linear-gradient(top,  #faa51a, #f47a20);
+  	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#faa51a', endColorstr='#f47a20');
+   	color: #fff;
+	padding: 5px 10px;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+ 	border-radius:4px;
+	float: right;
+	cursor: pointer;
+}
+
+.HEAD-TEXT{
+	width: 400px;
+	height: 50px;
+	margin: 0 auto;
+}
+
+/*CONTENT AREA*/ 
+.project{
+	width: 90%;
+	min-height: 100px;
+/*	background: lightblue;
+*/	margin: 30px auto;
+}
+
+/*head of project*/
+.head_project{
+	width: 100%;
+	height: 40px;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	background: royalblue;
+	opacity: 0.85;
+	padding: 5px 10px;
+	cursor: pointer;
+}
+.head_project .glyphicon-calendar{
+	font-size: 25px;
+	margin-left:10px;
+	display: inline-block;
+	margin-right: 10px;
+}
+.head_project_text{
+	display: inline-block;
+	color: white;
+	position: relative;
+	font-size: 18px;
+	opacity: 0.95;
+	top: -5px;
+}
+.head_project .glyphicon{
+	text-decoration: none;
+}
+
+
+.head_project .glyphicon-pencil, .head_project .glyphicon-trash{
+	display:none;
+	font-size: 17px;
+	margin-left:10px;
+	
+	margin-right: 7px;
+	margin-top: 5px;
+	float: right;
+	color: white;
+	opacity: 0.85;
+}
+.head_project  .glyphicon-trash{
+	margin-right: 15px;
+}
+.head_project:hover .glyphicon-pencil, .head_project:hover .glyphicon-trash{
+	display: inline-block;
+}
+
+/* input area*/
+.input_area{
+	width: 100%;
+	height: 45px;
+	background: lightgray;
+	padding: 5px 5px;
+}
+.input_area .glyphicon-plus, .input_area .glyphicon-minus{
+	position: relative;
+	color: rgb(71, 152, 90);
+	font-size: 30px;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+
+/* list of task*/
+ul.todolist {
+	list-style: none;
+	padding:  0;
+	margin: 0;
+	width: 100%;
+}
+
+ul.todolist > li{
+	border: 1px solid #ccc;
+	background:#eee;
+	min-height: 30px;
+	padding: 5px 5px 10px 12px;
+	cursor: pointer;
+}
+
+ul.todolist > li:last-child{
+	padding-bottom: 20px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+} 
+
+input.addTask {
+	position: relative;
+	top: -8px;
+	width: 80%;
+	height: 30px;
+	margin: 0;
+	margin-left: 10px;
+}
+
+button.btnAddTask{
+	position: relative;
+	top: -9px;
+	left: -10px;
+	background: rgb(71, 152, 90);
+	background: -moz-linear-gradient(90deg, rgb(71, 152, 90) 27%, rgb(83, 159, 172) 100%);
+	background: -webkit-linear-gradient(90deg, rgb(71, 152, 90) 27%, rgb(83, 159, 172) 100%);
+	background: -ms-linear-gradient(90deg, rgb(71, 152, 90) 27%, rgb(83, 159, 172) 100%);
+	background: linear-gradient(0deg, rgb(71, 152, 90) 27%, rgb(83, 159, 172) 100%);
+	border-top-right-radius: 10px;
+	border-bottom-right-radius:10px;
+	color:white;
+	height: 31px;
+	width: 13%;
+}
+
+button.btnAddPr{
+	color: rgb(230, 230, 230);
+	font-size: 20px;
+	padding: 10px;
+	text-shadow: 0px -1px 0px rgba(30, 30, 30, 0.8);
+	background: rgb(57, 94, 214);
+	background: -moz-linear-gradient(94deg, rgb(57, 94, 214) 27%, rgb(58, 156, 255) 75%);
+	background: -webkit-linear-gradient(94deg, rgb(57, 94, 214) 27%, rgb(58, 156, 255) 75%);
+	background: -ms-linear-gradient(94deg, rgb(57, 94, 214) 27%, rgb(58, 156, 255) 75%);
+	background: linear-gradient(4deg, rgb(57, 94, 214) 27%, rgb(58, 156, 255) 75%);
+	text-decoration: none;
+}
+
+ul li  input.checkbox{
+	position: relative;
+	display: inline-block;
+	float: left;
+	top: 5px;
+	left: 10px;
+}
+
+ul li  .contentTask{
+	display: inline-block;
+	position: relative;
+	top: 3px;
+	left: 30px;
+	max-width: 700px; 
+	min-height: auto;
+}
+
+ul li .btnTask{
+	float: right;
+	width: 15px;
+	height: 15px;
+	margin-left: 10px;
+	position: relative;
+	font-size: 16px;
+	color: rgba(57, 94, 214, 0.8);
+}
+
+ul li .up{
+	display: none;
+	font-size: 11px;
+	right: 40px;
+	top: 2px;
+}
+
+ul li .down{
+	display: none;
+	font-size: 11px;
+	top: 13px;
+	right: 15px;
+}
+
+ul li .pencil{
+	display: none;
+	right: 30px;
+	top: 6px;
+}
+
+ul li .trash{
+	display: none;
+	right: 20px;
+	top: 6px;
+}
+
+ul li:hover{
+	background-color: lightyellow;  
+}
+
+ul li:hover .btnTask{
+	display:inline-block;
+}
