@@ -27,7 +27,7 @@ tables:
 	
 --7. get the list of tasks having several exact matches of both name and status, from
 --the project ‘Garage’. Order by matches count
-	select t1.name, count(*) from tasks t1 jprojects p on t1.project_id = p.id 
+	select t1.name, count(*) from tasks t1 join projects p on t1.project_id = p.id 
 	where p.name = 'GARAGE' and exists (
 		select 1 from tasks t2 where t1.name = t2.name and t1.project_id = t2.project_id and t1.id <> t2.id)
 	group by t1.name order by count(*);
